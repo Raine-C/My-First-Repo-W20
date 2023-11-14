@@ -589,13 +589,23 @@ footer p {
     text-align: right;
 }
 
-/* project */
+/* project */ /* project */ /* project */
 
 /* .thumbnail{ */
     /* display: flex; */
     /* justify-content: center; */
     /* padding-top: 110px; */
 
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
+.sidenav a {
+    text-decoration: none;
+    color: #1c2321;
+}
 
 #ProjectTitle {
     display: flex;
