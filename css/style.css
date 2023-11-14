@@ -1,0 +1,768 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 49px;
+    font-family: Philosopher;
+}
+
+h2 {
+    font-size: 39px;
+    font-family: Philosopher;
+}
+
+h3 {
+    font-size: 31px;
+    font-family: Philosopher;
+}
+
+h4 {
+    font-size: 25px;
+    font-family: Philosopher;
+}
+
+h5 {
+    font-size: 20px;
+    font-family: Philosopher;
+}
+
+h6 {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+header {
+    font-family: philosopher;
+    font-size: 20px;
+    color: #1c2321;
+    background: #fafaefb3;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 10vw;
+}
+
+.navbarlist {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0px 10vw; */
+}
+
+.logo, .navbar {
+    display: flex;
+    align-items: center;
+}
+
+.resumebox {
+    margin-bottom: -6px;
+    margin-left: -3px;
+}
+
+
+header li {
+    display: inline;
+    margin-right: 24px;
+}
+
+dl, ol, ul {
+    margin-bottom: 0rem !important;
+}
+
+
+
+/* The Toggle */
+.toggleWrapper {
+    display: flex;
+    align-items: center;
+
+    #dn {
+        position: absolute;
+        left: -99em;
+    }
+}
+
+.toggle {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 34px;
+    background-color: #1c2321;
+    border-radius: 34px;
+    transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+    &:before {
+        content: 'EN';
+        position: absolute;
+        left: -40px;
+        top: 7px;
+        font-size: 18px;
+        color: #1c2321;
+    }
+
+    &:after {
+        content: '繁';
+        font-family: 'Noto Sans TC', sans-serif;
+        position: absolute;
+        right: -36px;
+        top: 3.5px;
+        font-size: 18px;
+        color: #C6C8C7;
+    }
+}
+
+.toggle__handler {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    top: 4px;
+    left: 3px;
+    width: 26px;
+    height: 26px;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+    transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+input:checked {
+    +.toggle {
+        background-color: #1c2321;
+
+        &:before {
+            color: #C6C8C7;
+        }
+
+        &:after {
+            color: #1c2321;
+        }
+
+        .toggle__handler {
+            background-color: #fff;
+            transform: translate3d(27px, 0, 0) rotate(0);
+
+
+        }
+
+    }
+}
+
+header a {
+    color: #1c2321;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.dropdown {
+    display:none;
+}
+
+.dropdown-menu {
+   font-size: 1.2rem;
+   
+}
+
+.dropdown-menu::before{
+    transform: translate3d(0px, 80px, 0px)!important;
+}
+
+.dropdown-item:hover {
+    background-color: #E3DDD8;
+}
+
+.dropdown-item:active{
+    background-color: #907764;
+}
+.dropdown-toggle::after {
+    display:none !important;
+}
+
+.btn-secondary {
+    border: none;
+    background: transparent;
+}
+
+.btn:hover {
+    border: none;
+    background: transparent;
+}
+
+.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+    background: transparent;
+}
+
+
+
+
+/* main */
+
+section {
+    background: #fafaef;
+    padding: 48px 10vw;
+}
+
+/* Hero Page */
+
+.introduction {
+    padding-top: 171px;
+}
+
+.intro {
+    display: flex;
+    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
+}
+
+.introduction h1 {
+    color: #1c2321;
+    margin-bottom: 40px;
+}
+
+.introduction h3 {
+    color: #1c2321;
+    margin-bottom: 40px;
+    /* margin-right: 80px; */
+}
+
+.ctabutton {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.ctabutton a {
+    text-decoration: none;
+}
+
+.introduction button {
+    font-size: 20px;
+    background-color: #1c2321;
+    color: #fafaef;
+    font-family: Philosopher;
+    padding: 16px 16px;
+    margin-right: 16px;
+    border-radius: 20px;
+    border: 0px;
+    cursor: pointer;
+    box-shadow: 5px 10px 80px #888888;
+}
+
+
+/* My Background */
+.title h2 {
+    color: #1c2321;
+    text-align: center;
+    margin-top: 48px;
+}
+
+.mybackground {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#flashcardPicture {
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+
+.TheatreArt,
+.SalesEngineer,
+.ProjectManager {
+    height: 429px;
+    width: 319px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.TheatreArt {
+    height: 429px;
+    width: 319px;
+    background-image: url("../image/TheatreArt.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.SalesEngineer {
+    height: 429px;
+    width: 319px;
+    background-image: url("../image/SalesEngineer.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.ProjectManager {
+    height: 429px;
+    width: 319px;
+    background-image: url("../image/ProjectManager.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.text1,
+.text2,
+.text3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(33, 37, 36, 0.527);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+
+}
+
+
+.text1 h3,
+.text2 h3,
+.text3 h3 {
+    align-items: center;
+    justify-content: center;
+    color: #fafaef;
+
+}
+
+
+.TheatreArtcard,
+.ProjectManagercard,
+.SalesEngineercard {
+    border-radius: 0 0 20px 20px;
+    background-color: #fff;
+    border: 1px solid #907764;
+    height: 465px;
+    width: 317px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: -390px;
+    box-shadow: 5px 5px 80px #888888;
+    cursor: pointer;
+
+}
+
+#TA h4,
+#SALES h4,
+#PM h4 {
+    margin-bottom: 16px;
+    padding-left: 16px;
+}
+
+#TA img,
+#SALES img,
+#PM img {
+    margin-bottom: 16px;
+    width: 48px;
+    height: 48px;
+}
+
+.bounceMe {
+    animation: arrowDown .67s infinite;
+}
+
+@keyframes arrowDown {
+    0% {
+        transform: translateY(0px);
+
+    }
+
+    50% {
+        transform: translateY(6px);
+
+    }
+
+    50% {
+        transform: translateY(3px);
+
+    }
+
+    75% {
+        transform: translateY(6px);
+
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* My worK */
+
+#worklistGrid {
+    justify-content: center;
+    display: grid;
+    grid-template: 407px 132px 407px 132px / 564px 564px;
+    grid-template-areas:
+        "work1 work2"
+        "PD1 PD2"
+        "work3 work4"
+        "PD3 PD4";
+
+}
+
+#work1 {
+    background-image: url("../image/photoWF.png");
+    grid-area: work1;
+    position: relative;
+}
+
+#work2 {
+    background-image: url("../image/photoWF.png");
+    grid-area: work2;
+    position: relative;
+
+}
+
+#work3 {
+    background-image: url("../image/photoWF.png");
+    grid-area: work3;
+    position: relative;
+}
+
+#work4 {
+    background-image: url("../image/photoWF.png");
+    grid-area: work4;
+    position: relative;
+}
+
+.worklistGridArea {
+    background-size: cover;
+    background-position: center;
+    margin: 0 12px;
+    border-radius: 20px;
+
+}
+
+.Apptag {
+    width: 108px;
+    height: 58px;
+    border-radius: 20px;
+    background: #C7BBB1;
+    text-align: center;
+    line-height: 58px;
+    justify-content: center;
+    color: #1c2321;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+}
+
+.Webtag {
+    width: 108px;
+    height: 58px;
+    border-radius: 20px;
+    background: #8D9190;
+    text-align: center;
+    line-height: 58px;
+    justify-content: center;
+    color: #1c2321;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#PD1,
+#PD2,
+#PD3,
+#PD4,
+h4 {
+    padding: 8px;
+    color: #1c2321;
+}
+
+#PD1,
+#PD2,
+#PD3,
+#PD4,
+h6 {
+    padding: 8px;
+    color: #8D9190;
+}
+
+
+/* Testimonial */
+
+.testimonial {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #1c2321;
+}
+
+.Ttext {
+    max-width: 580px;
+}
+
+#TMPhoto {
+    width: 314px;
+    height: 360px;
+    background-image: url("../image/Charlotte.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 20px;
+
+}
+
+.Ttext .right {
+    text-align: right;
+    font-size: 64px;
+}
+
+.Ttext .left {
+    text-align: left;
+    font-size: 64px;
+}
+
+.testimonial H4 {
+    padding: 0px 0 8px 0;
+    text-align: left;
+}
+
+.testimonial h5 {
+    padding: 0px 0 2px 0;
+    text-align: left;
+}
+
+
+
+.Encourage h5 {
+    color: #1c2321;
+    text-align: center;
+    margin: 16px 0 0 0;
+}
+
+
+/* Footer */
+footer {
+    background: #1c2321;
+    padding: 24px 10vw;
+}
+
+#FTop {
+    display: flex;
+    align-items: center;
+    height: 90px;
+}
+
+.FLeft img {
+    margin-right: 9px;
+    margin-left: 7px;
+
+}
+
+footer h6 {
+    background: #1c2321;
+    color: #fafaef;
+}
+
+footer p {
+    background: #1c2321;
+    color: #fafaefa0;
+    text-align: right;
+}
+
+/* project */
+
+/* .thumbnail{ */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* padding-top: 110px; */
+
+
+#ProjectTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+
+.projectRole{
+    display: flex;
+}
+
+.PjContent1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 17vw ;
+
+}
+
+.PjConten2{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding-left: 17vw ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query */
+@media only screen and (max-width: 1000px) {
+
+    /* nav bar */
+    .toggleWrapper, .navbarlist {
+        display: none;
+    }
+
+    .dropdown {
+        display: inline;
+        margin-left: 23%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: end;
+        padding: 54px 21px 24px 21px;
+
+    }
+
+
+    /* introduction */
+    .introduction {
+        padding: 0px;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 159px 21px 72px 21px;
+    }
+
+    /* My background */
+    .mybackground {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 39px 0px 39px;
+    }
+
+    .TheatreArtcard,
+    .SalesEngineercard,
+    .ProjectManagercard {
+        margin-bottom: 48px;
+    }
+
+    /* My Work */
+    #flashcardPicture,
+    #flashcard {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #worklistGrid {
+        grid-template: 256px 132px 256px 132px 256px 132px 256px 132px/355px;
+        grid-template-areas:
+            "work1"
+            "PD1"
+            "work2"
+            "PD2"
+            "work3"
+            "PD3"
+            "work4"
+            "PD4";
+            padding: 0px 39px 0px 39px;
+
+    }
+
+    .Apptag {
+        width: 81px;
+        height: 44px;
+        line-height: 44px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        font-size: 18.75px;
+
+    }
+
+    .Webtag {
+        width: 81px;
+        height: 44px;
+        line-height: 44px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        font-size: 18.75px;
+    }
+
+
+    /* Testimonial*/
+    .testimonial {
+        flex-direction: column;
+        padding: 0px 39px 0px 39px;
+    }
+
+    #TMPhoto {
+        margin-bottom: 36px;
+    }
+
+    /* Encouragement*/
+    .Encourage {
+        padding: 36px 21px 36px 21px;
+    }
+
+    /* footer */
+    footer P {
+        text-align: center;
+        margin-top: 24PX;
+    }
+
+    #FTop {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .FImg {
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
