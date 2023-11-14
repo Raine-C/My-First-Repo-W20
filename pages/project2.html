@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Two</title>
-    <link rel="icon" type="image/x-icon" href="image/RcLogo.png">
+    <link rel="icon" type="image/x-icon" href="../image/RcLogo.png">
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -27,6 +27,255 @@
 </head>
 
 <body>
+    <!-- navBar  -->
+    <header>
+        <nav class="navbar">
+            <div class="container-fluid align-items-center" style="margin: 0px 10vw;">
+                <a href="../index.html" class="navbar-brand"><img src="../image/RcLogo.png" alt="LOGO" width="56px"
+                        height="56px"></a>
+                <div class="navbarlist">
+                    <ul>
+                        <li><a href="#myworklist">Work</a></li>
+                        <!-- <li><a href="#">About me</a></li> -->
+                        <li><a href="#" target="_blank">Resume</a>
+                            <img class="resumebox" style="margin-bottom:3px;" src="../image/arrow-right-up.png"
+                                alt="ArrowRightUp" width="24px" height="24px">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="toggleWrapper">
+                    <input type="checkbox" class="dn" id="dn" />
+                    <label for="dn" class="toggle">
+                        <span class="toggle__handler"></span>
+                    </label>
+                </div>
+                <!-- toggle button for mobile nav -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false"><img src="../image/menubutton.png" height="44px" width="44px"
+                            alt="menubutton">
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#myworklist">Work</a></li>
+                        <li><a class="dropdown-item" href="#">Resume</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- Thumbnail -->
+        <section class="thumbnail" style="padding-top: 171PX;">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-s-4">
+                    <img src="../image/photoWF.png" class="img-fluid" alt="Thumbnail">
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Project Title -->
+        <section id="ProjectTitle">
+            <h1 class="col-3">Project Name</h1>
+            <div class="projectRole col-7">
+                <h4 class="prt">Roles :</h4>
+                <h4>UX/UI Designer</h4>
+                <h4 class="prt">Tools :</h4>
+                <h4>Figma</h4>
+                <h4 class="prt">Duration :</h4>
+                <h4>X Weeks</h4>
+        </section>
+
+        <!-- Overview -->
+        <section class="PjContent1">
+            <h2 class="col-2">Overview</h2>
+            <h6 class="col-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in
+                hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.
+                Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
+                mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet
+                augue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit
+                urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. </h6>
+        </section>
+
+        <!-- Problem -->
+        <section class="PjConten2">
+            <div class="problem col-6">
+                <h2>Problem</h2>
+                <ul>
+                    <li>Problem 1</li>
+                    <li>Problem 2</li>
+                    <li>Problem 3</li>
+                </ul>
+            </div>
+            <div class="ppsolution col-5">
+                <h3>Proposed Solutions</h3>
+                <ul>
+                    <li>Solution 1</li>
+                    <li>Solution 2</li>
+                    <li>Solution 3</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Problem Statement -->
+        <section class="PjContent1">
+            <div class="col-10" style="background-color: #C7BBB1; padding: 32px;">
+                <p class="col-8" style="font-size: 64px;">"</p>
+                <h3 class="col-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. ipsum dolor
+                    sit amet, consectetur adipiscing elit. </h3>
+                <p class="col-8" style="font-size: 64px; text-align: right;">"</p>
+            </div>
+        </section>
+
+        <!-- Research -->
+        <section class="PjConten2">
+            <div class="research col-6">
+                <h2>Research</h2>
+                <ul>
+                    <li>Problem 1</li>
+                    <li>Problem 2</li>
+                    <li>Problem 3</li>
+                </ul>
+            </div>
+            <div class="ppsolution col-5">
+                <h3>What I found</h3>
+                <ul>
+                    <li>hightlight 1</li>
+                    <li>hightlight 2</li>
+                    <li>hightlight 3</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Ideation -->
+        <section class="Ideation">
+            <h2>Ideation</h2>
+            <div class="col-10" style="display: flex; justify-content: space-between;">
+                <h5>User Persona</h5>
+                <img src="../image/photoWF.png" width="826px" height="480px" alt="User Persona">
+            </div>
+            <div class="col-10">
+                <h5>User Task Flow</h5>
+                <img src="../image/photoWF.png" width="956px" height="480px" alt="User Persona">
+            </div>
+            <div class="col-10">
+                <h5>Sketch</h5>
+                <img src="../image/photoWF.png" width="956px" height="480px" alt="User Persona">
+            </div>
+        </section>
+
+
+        <!-- Prototyping -->
+        <section class="Prototyping">
+            <h2>Prototyping</h2>
+            <div class="col-10">
+                <h5>UI Elements</h5>
+                <img class="col-10" src="../image/photoWF.png" width="826px" height="480px" alt="User Persona">
+            </div>
+            <div class="col-12">
+                <h5>Mockup</h5>
+                <div class="col-10" style="display: flex; justify-content: space-between;">
+                    <img src="../image/photoWF.png" width="466px" height="480px" alt="User Persona">
+                    <img src="../image/photoWF.png" width="466px" height="480px" alt="User Persona">
+                </div>
+                <h5 class="col-10" style="text-align: right;">Explore Figma Prototype</h5>
+            </div>
+        </section>
+
+
+        <!-- Testing -->
+        <section class="Testing">
+            <h2>Testing</h2>
+            <h5>User Test</h5>
+            <div class="col-10" style="display: flex; justify-content: space-between;">
+                <img class="col-5" src="../image/photoWF.png" width="826px" height="480px" alt="User Persona">
+                <div class="col-5" style="display: flex; flex-direction: column;">
+                    <h4>What’s the tester said?</h4>
+                    <ul>
+                        <li>opinion 1</li>
+                        <li>opinion 2</li>
+                        <li>opinion 3</li>
+                    </ul>
+                    <h4>What can be improved?</h4>
+                    <ul>
+                        <li>Improvement 1</li>
+                        <li>Improvement 2</li>
+                        <li>Improvement 3</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12">
+                <h5>Compare</h5>
+                <div class="col-10" style="display: flex; justify-content: space-between;">
+                    <img src="../image/photoWF.png" width="466px" height="480px" alt="User Persona">
+                    <img src="../image/photoWF.png" width="466px" height="480px" alt="User Persona">
+                </div>
+                <div class="col-10" style="display: flex; justify-content: space-between;">
+                    <img src="../image/photoWF.png" width="466px" height="480px" alt="User Persona">
+                    <img src="../image/photoWF.png" width="466px" height="480px" alt="User Persona">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Reflection -->
+        <section class="">
+            <h2>Reflection</h2>
+            <div class="col-10" style="background-color: #C6C8C7; padding: 32px;">
+                <h5 class="col-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. ipsum dolor
+                    sit amet, consectetur adipiscing elit. </h5>
+            </div>
+
+            <h5>Take Away</h5>
+            <div class="col-10" style="display: flex; justify-content: space-between;">
+                <h4>1</h4>
+                <h4>2</h4>
+                <h4>3</h4>
+            </div>
+        </section>
+
+
+
+        <!-- Project Button -->
+        <section>
+            <div class="col-10" style="display: flex; justify-content: space-between;">
+                <div style="display:flex; flex-direction: column; align-items:center ;">
+                    <img src="../image/Arrow Left.png" height="32px" width="32px" alt="Arrow left">
+                    <h5>Previous Project Name</h5>
+                </div>
+                <div style="display:flex; flex-direction: column; align-items:center ;">
+                    <img src="../image/Arrow Right.png" height="32px" width="32px" alt="Arrow Right">
+                    <h5>Next Project Name</h5>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+        <div id="FTop">
+            <div class="FLeft">
+                <div class="FImg"><a href="https://www.linkedin.com/in/raine-cai-947085102/" target="_blank"><img
+                            src="../image/Linkedin.png" alt="LinkedinIcon" width="32px" height="32px"></a>
+                    <a href="https://www.behance.net/rainecai" target="_blank"><img src="../image/Behance.png"
+                            alt="BehanceIcon" width="32px" height="32px"></a>
+                </div>
+                <h6>raine.ytcai@gmail.com</h6>
+            </div>
+        </div>
+        <p>Copyright © 2023 Raine Cai </p>
+    </footer>
+
+
+
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
