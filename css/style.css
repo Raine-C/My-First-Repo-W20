@@ -60,7 +60,8 @@ nav {
     /* padding: 0px 10vw; */
 }
 
-.logo, .navbar {
+.logo,
+.navbar {
     display: flex;
     align-items: center;
 }
@@ -76,7 +77,9 @@ header li {
     margin-right: 24px;
 }
 
-dl, ol, ul {
+dl,
+ol,
+ul {
     margin-bottom: 0rem !important;
 }
 
@@ -169,27 +172,28 @@ header a:hover {
 }
 
 .dropdown {
-    display:none;
+    display: none;
 }
 
 .dropdown-menu {
-   font-size: 1.2rem;
-   
+    font-size: 1.2rem;
+
 }
 
-.dropdown-menu::before{
-    transform: translate3d(0px, 80px, 0px)!important;
+.dropdown-menu::before {
+    transform: translate3d(0px, 80px, 0px) !important;
 }
 
 .dropdown-item:hover {
     background-color: #E3DDD8;
 }
 
-.dropdown-item:active{
+.dropdown-item:active {
     background-color: #907764;
 }
+
 .dropdown-toggle::after {
-    display:none !important;
+    display: none !important;
 }
 
 .btn-secondary {
@@ -202,7 +206,11 @@ header a:hover {
     background: transparent;
 }
 
-.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
     background: transparent;
 }
 
@@ -589,23 +597,38 @@ footer p {
     text-align: right;
 }
 
-/* project */ /* project */ /* project */
+/* project */
+/* project */
+/* project */
 
-/* .thumbnail{ */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* padding-top: 110px; */
+
+.thumbnail {
+    padding-top: 123px;
+    
+}
 
 .sidenav {
     display: flex;
     flex-direction: column;
     position: fixed;
+    z-index: 1;
+    top: 170px;
+    right: 2vw;
+    background: transparent;
+    overflow-x: hidden;
+    padding: 8px 0;
 }
 
 .sidenav a {
     text-decoration: none;
+    color: #8D9190;
+    padding: 24px 16px;
+}
+
+.sidenav a :hover {
     color: #1c2321;
 }
+
 
 #ProjectTitle {
     display: flex;
@@ -614,23 +637,17 @@ footer p {
 }
 
 
-.projectRole{
+.projectRole {
     display: flex;
 }
 
 .PjContent1 {
     display: flex;
-    flex-direction: column;
-    padding-left: 17vw ;
+    justify-content: center;
 
 }
 
-.PjConten2{
-    display: flex;
-    align-items: end;
-    justify-content: space-between;
-    padding-left: 17vw ;
-}
+
 
 
 
@@ -649,7 +666,8 @@ footer p {
 @media only screen and (max-width: 1000px) {
 
     /* nav bar */
-    .toggleWrapper, .navbarlist {
+    .toggleWrapper,
+    .navbarlist {
         display: none;
     }
 
@@ -717,7 +735,7 @@ footer p {
             "PD3"
             "work4"
             "PD4";
-            padding: 0px 39px 0px 39px;
+        padding: 0px 39px 0px 39px;
 
     }
 

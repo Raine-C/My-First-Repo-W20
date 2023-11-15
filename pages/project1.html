@@ -68,53 +68,79 @@
 
     <main>
         <!-- Thumbnail -->
-        <section class="thumbnail" style="padding-top: 171PX;">
-            <div class="row justify-content-center">
-                <div class="col-md-12 col-s-4">
-                    <img src="../image/photoWF.png" class="img-fluid" alt="Thumbnail">
+        <section class="thumbnail" style="height: auto;">
+            <div class="container-fluid">
+                <div class="row">
+                    <img src="../image/Rectangle 655.png" class="img-fluid" alt="Thumbnail">
                 </div>
             </div>
-
         </section>
-<section>
-        <aside class="sidenav">
-            <a href="#">Overview</a>
-            <a href="#">The Problem</a>
-            <a href="#">Research</a>
-            <a href="#">Ideation</a>
-            <a href="#">Prototyping</a>
-            <a href="#">Testing</a>
-            <a href="#">Reflection</a>
-        </aside >
-    </section>
 
-        <!-- Project Title -->
+
+        <!-- Sidenav -->
+        <div class="sidenav d-none d-lg-flex">
+            <a href="#ProjectTitle">
+                <h5>Overview</h5>
+            </a>
+            <a href="#theProblem">
+                <h5>The Problem</h5>
+            </a>
+            <a href="#research">
+                <h5>Research</h5>
+            </a>
+            <a href="#ideation">
+                <h5>Ideation</h5>
+            </a>
+            <a href="#Prototyping">
+                <h5>Prototyping</h5>
+            </a>
+            <a href="#Testing">
+                <h5>Testing</h5>
+            </a>
+            <a href="#Reflection">
+                <h5>Reflection</h5>
+            </a>
+        </div>
+
+
+        
+        <!-- Project START -->
         <section id="ProjectTitle">
-            <h1 class="col-3">Project Name</h1>
-            <div class="projectRole col-7">
-                <h4 class="prt">Roles :</h4>
-                <h4>UX/UI Designer</h4>
-                <h4 class="prt">Tools :</h4>
-                <h4>Figma</h4>
-                <h4 class="prt">Duration :</h4>
-                <h4>X Weeks</h4>
+            <div class="container-fluid d-md-flex align-items-end justify-content-between">
+                <div class="col-md-3">
+                    <h1>Project Name</h1>
+                </div>
+                <div class="projectRole col-md-7 justify-content-end">
+                    <h4 class="prt">Roles :</h4>
+                    <h4>UX/UI Designer</h4>
+                    <!-- <h4 class="prt">Tools :</h4>
+                    <h4>Figma</h4> -->
+                    <h4 class="prt">Duration :</h4>
+                    <h4>X Weeks</h4>
+                </div>
         </section>
 
         <!-- Overview -->
         <section class="PjContent1">
-            <h2 class="col-2">Overview</h2>
-            <h6 class="col-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in
+            <div class="row justify-content-center">
+            <div class="col-10">
+            <h2 class="">Overview</h2></div>
+            <div class="col-10">
+            <h6 class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in
                 hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.
                 Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
                 mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet
                 augue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit
                 urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. </h6>
+            </div>
+        </div>
         </section>
 
         <!-- Problem -->
-        <section class="PjConten2">
-            <div class="problem col-6">
+        <section id="theProblem">
+            <div class="row justify-content-center">
+            <div class="problem col-5">
                 <h2>Problem</h2>
                 <ul>
                     <li>Problem 1</li>
@@ -130,22 +156,25 @@
                     <li>Solution 3</li>
                 </ul>
             </div>
+        </div>
         </section>
 
         <!-- Problem Statement -->
         <section class="PjContent1">
+            <div class="row justify-content-center">
             <div class="col-10" style="background-color: #C7BBB1; padding: 32px;">
                 <p class="col-8" style="font-size: 64px;">"</p>
                 <h3 class="col-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. ipsum dolor
                     sit amet, consectetur adipiscing elit. </h3>
                 <p class="col-8" style="font-size: 64px; text-align: right;">"</p>
             </div>
+        </div>
         </section>
 
         <!-- Research -->
-        <section class="PjConten2">
+        <section id="research" class="PjConten2">
             <div class="research col-6">
-                <h2>Research</h2>
+                <h2 id="research">Research</h2>
                 <ul>
                     <li>Problem 1</li>
                     <li>Problem 2</li>
@@ -163,7 +192,7 @@
         </section>
 
         <!-- Ideation -->
-        <section class="Ideation">
+        <section id="ideation">
             <h2>Ideation</h2>
             <div class="col-10" style="display: flex; justify-content: space-between;">
                 <h5>User Persona</h5>
@@ -181,7 +210,7 @@
 
 
         <!-- Prototyping -->
-        <section class="Prototyping">
+        <section id="Prototyping">
             <h2>Prototyping</h2>
             <div class="col-10">
                 <h5>UI Elements</h5>
@@ -199,7 +228,7 @@
 
 
         <!-- Testing -->
-        <section class="Testing">
+        <section id="Testing">
             <h2>Testing</h2>
             <h5>User Test</h5>
             <div class="col-10" style="display: flex; justify-content: space-between;">
@@ -234,7 +263,7 @@
 
 
         <!-- Reflection -->
-        <section class="">
+        <section id="Reflection">
             <h2>Reflection</h2>
             <div class="col-10" style="background-color: #C6C8C7; padding: 32px;">
                 <h5 class="col-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. ipsum dolor
