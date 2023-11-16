@@ -604,7 +604,6 @@ footer p {
 
 .thumbnail {
     padding-top: 123px;
-    
 }
 
 .sidenav {
@@ -613,7 +612,7 @@ footer p {
     position: fixed;
     z-index: 1;
     top: 170px;
-    right: 2vw;
+    right: 1vw;
     background: transparent;
     overflow-x: hidden;
     padding: 8px 0;
@@ -622,7 +621,7 @@ footer p {
 .sidenav a {
     text-decoration: none;
     color: #8D9190;
-    padding: 24px 16px;
+    padding: 20px 16px;
 }
 
 .sidenav a :hover {
@@ -630,29 +629,18 @@ footer p {
 }
 
 
-#ProjectTitle {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-}
-
 
 .projectRole {
     display: flex;
 }
 
-.PjContent1 {
-    display: flex;
-    justify-content: center;
-
+.subtitle {
+    padding: 24px 0px 0px 0px;
 }
 
-
-
-
-
-
-
+.subtitlex2 {
+    padding: 48px 0px 0px 0px;
+}
 
 
 
