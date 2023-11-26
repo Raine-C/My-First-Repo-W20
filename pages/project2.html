@@ -1,287 +1,644 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-DMGEH5374X"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Two</title>
-    <link rel="icon" type="image/x-icon" href="../image/RcLogo.png">
+      gtag("config", "G-DMGEH5374X");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canada Post - Raine Cai</title>
+    <link rel="icon" type="image/x-icon" href="../image/Index/RcLogo.png" />
     <!-- CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
     <!-- fonts1 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Open+Sans:wght@300&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <!-- fonts2 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
 
-
-</head>
-
-<body>
+  <body>
     <!-- navBar  -->
     <header>
-        <nav class="navbar">
-            <div class="container-fluid align-items-center" style="margin: 0px 10vw;">
-                <a href="../index.html" class="navbar-brand"><img src="../image/RcLogo.png" alt="LOGO" width="56px"
-                        height="56px"></a>
-                <div class="navbarlist">
-                    <ul>
-                        <li><a href="#myworklist">Work</a></li>
-                        <!-- <li><a href="#">About me</a></li> -->
-                        <li><a href="#" target="_blank">Resume</a>
-                            <img class="resumebox" style="margin-bottom:3px;" src="../image/arrow-right-up.png"
-                                alt="ArrowRightUp" width="24px" height="24px">
-                        </li>
-                    </ul>
-                </div>
+      <nav class="navbar d-flex justify-content-center">
+        <div class="container-xxl align-items-center" style="margin: 0px 10vw">
+          <a href="../index.html" class="navbar-brand"
+            ><img
+              src="../image/Index/RcLogo.png"
+              alt="LOGO"
+              width="56px"
+              height="56px"
+          /></a>
+          <div class="navbarlist">
+            <ul>
+              <li><a href="#myworklist">Work</a></li>
+              <!-- <li><a href="#">About me</a></li> -->
+              <li>
+                <a href="#" target="_blank">Resume</a>
+                <img
+                  class="resumebox"
+                  style="margin-bottom: 3px"
+                  src="../image/Index/arrow-right-up.png"
+                  alt="ArrowRightUp"
+                  width="24px"
+                  height="24px"
+                />
+              </li>
+            </ul>
+          </div>
 
-                <div class="toggleWrapper">
-                    <input type="checkbox" class="dn" id="dn" />
-                    <label for="dn" class="toggle">
-                        <span class="toggle__handler"></span>
-                    </label>
-                </div>
-                <!-- toggle button for mobile nav -->
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false"><img src="../image/menubutton.png" height="44px" width="44px"
-                            alt="menubutton">
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#myworklist">Work</a></li>
-                        <li><a class="dropdown-item" href="#">Resume</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+          <div class="toggleWrapper">
+            <input type="checkbox" class="dn" id="dn" />
+            <label for="dn" class="toggle">
+              <span class="toggle__handler"></span>
+            </label>
+          </div>
+          <!-- toggle button for mobile nav -->
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="../image/Index/menubutton.png"
+                height="44px"
+                width="44px"
+                alt="menubutton"
+              />
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#myworklist">Work</a></li>
+              <li><a class="dropdown-item" href="#">Resume</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-
     <main>
-        <!-- Thumbnail -->
-        <section class="thumbnail" style="padding-top: 171PX;">
-            <div class="row justify-content-center">
-                <div class="col-md-12 col-s-4">
-                    <img src="../image/photoWF.png" class="img-fluid" alt="Thumbnail">
-                </div>
+      <!-- Thumbnail -->
+      <section class="thumbnail" style="height: auto">
+        <div class="container-xxl">
+          <div class="row">
+            <img
+              src="../image/ProjectOne/Thumbnail.webp"
+              class="img-fluid"
+              alt="Thumbnail"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Sidenav -->
+      <div class="sidenav d-none d-lg-flex">
+        <a href="#ProjectTitle">
+          <h5>Overview</h5>
+        </a>
+        <a href="#theProblem">
+          <h5>The Problem</h5>
+        </a>
+        <a href="#research">
+          <h5>Research</h5>
+        </a>
+        <a href="#ideation">
+          <h5>Ideation</h5>
+        </a>
+        <a href="#Prototyping">
+          <h5>Prototyping</h5>
+        </a>
+        <a href="#Testing">
+          <h5>Testing</h5>
+        </a>
+        <a href="#Reflection">
+          <h5>Reflection</h5>
+        </a>
+      </div>
+
+      <!-- Project START -->
+      <section id="ProjectTitle">
+        <div class="container-xxl">
+          <div class="row justify-content-center">
+            <h1>Mississauga Humane Society</h1>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="projectRole d-flex">
+              <h4 class="prt">Roles :</h4>
+              <h4>UX/UI Designer</h4>
+              <h4 class="prt">Duration :</h4>
+              <h4>4 Weeks</h4>
             </div>
+          </div>
+        </div>
+      </section>
 
-        </section>
+      <!-- Overview -->
+      <section class="PjContent1">
+        <div class="container-xxl">
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <h2 class="">Overview</h2>
+            </div>
+            <div class="col-10 subtitle">
+              <h5 class="">
+                The Mississauga Humane Society” is dedicated to finding forever
+                homes and loving families for local animals in need. However,
+                the current website doesn't feature adoptable animals upfront or
+                information about the adoption process which negatively impacts
+                the user experience leading to lower pet adoption rates. How
+                might we increase adoption rates and reduce friction for
+                potential pet owners to ensure a seamless and convenient
+                adoption experience?
+              </h5>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- Original -->
+      <section>
+        <div class="row justify-content-center subtitlex2">
+          <div class="col-10">
+            <h5>The Not-So-Cute Side of the Mississauga Humane Society</h5>
+          </div>
+        </div>
 
-        <!-- Project Title -->
-        <section id="ProjectTitle">
-            <h1 class="col-3">Project Name</h1>
-            <div class="projectRole col-7">
-                <h4 class="prt">Roles :</h4>
-                <h4>UX/UI Designer</h4>
-                <h4 class="prt">Tools :</h4>
-                <h4>Figma</h4>
-                <h4 class="prt">Duration :</h4>
-                <h4>X Weeks</h4>
-        </section>
+        <div class="row justify-content-center">
+          <div class="col-5">
+            <img
+              src="../image/ProjectOne/Original-1.jpg"
+              class="img-fluid"
+              alt="Mockup 1"
+            />
+          </div>
+          <div class="col-5">
+            <img
+              src="../image/ProjectOne/Original-2.jpg"
+              class="img-fluid"
+              alt="Mockup 2"
+            />
+          </div>
+        </div>
+      </section>
 
-        <!-- Overview -->
-        <section class="PjContent1">
-            <h2 class="col-2">Overview</h2>
-            <h6 class="col-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in
-                hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.
-                Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
-                mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet
-                augue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit
-                urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. </h6>
-        </section>
-
-        <!-- Problem -->
-        <section class="PjConten2">
-            <div class="problem col-6">
-                <h2>Problem</h2>
-                <ul>
-                    <li>Problem 1</li>
-                    <li>Problem 2</li>
-                    <li>Problem 3</li>
-                </ul>
+      <!-- Problem -->
+      <section id="theProblem">
+        <div class="container-xxl">
+          <div class="row justify-content-center">
+            <div class="problem col-5">
+              <h2>Problem</h2>
+              <ul class="subtitle">
+                <li><h5>It doesn't feature adoptable animals upfront.</h5></li>
+                <li>
+                  <h5>Sectioin of way to help is too big and not intuitive</h5>
+                </li>
+                <li><h5>Pages are not sharing same colour scheme.</h5></li>
+              </ul>
             </div>
             <div class="ppsolution col-5">
-                <h3>Proposed Solutions</h3>
-                <ul>
-                    <li>Solution 1</li>
-                    <li>Solution 2</li>
-                    <li>Solution 3</li>
-                </ul>
+              <h2>Proposed Solutions</h2>
+              <ul class="subtitle">
+                <li><h5>Priority the content of homepage</h5></li>
+                <li><h5>Provide a clear Information Architecture</h5></li>
+                <li><h5>Apply visual consistency</h5></li>
+              </ul>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Problem Statement -->
-        <section class="PjContent1">
-            <div class="col-10" style="background-color: #C7BBB1; padding: 32px;">
-                <p class="col-8" style="font-size: 64px;">"</p>
-                <h3 class="col-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. ipsum dolor
-                    sit amet, consectetur adipiscing elit. </h3>
-                <p class="col-8" style="font-size: 64px; text-align: right;">"</p>
+      <!-- Problem Statement -->
+      <section class="PjContent1">
+        <div class="container-xl">
+          <div class="row justify-content-center">
+            <div
+              class="col-10"
+              style="background-color: #c7bbb1; padding: 32px"
+            >
+              <div class="row justify-content-center">
+                <p class="col-10" style="font-size: 64px">"</p>
+              </div>
+              <div class="row justify-content-center">
+                <h3 class="col-10">
+                  the current website doesn't feature adoptable animals upfront
+                  or information about the adoption process which negatively
+                  impacts the user experience leading to lower pet adoption
+                  rates.
+                </h3>
+              </div>
+              <div class="row justify-content-center">
+                <p class="col-10" style="font-size: 64px; text-align: right">
+                  "
+                </p>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Research -->
-        <section class="PjConten2">
-            <div class="research col-6">
-                <h2>Research</h2>
-                <ul>
-                    <li>Problem 1</li>
-                    <li>Problem 2</li>
-                    <li>Problem 3</li>
-                </ul>
+      <!-- Research -->
+      <section id="research">
+        <div class="container-xxl">
+          <div class="row justify-content-center">
+            <div class="col-5">
+              <h2>Research</h2>
+              <h5 class="subtitle">
+                My research first centred around the one-on-one interviews would
+                help me understand users' adopting experience and specific
+                issues the website would need to address. Secondly, observe the
+                competitive landscape to understand how other animal rescue
+                websites are addressing similar issues.
+              </h5>
             </div>
-            <div class="ppsolution col-5">
-                <h3>What I found</h3>
-                <ul>
-                    <li>hightlight 1</li>
-                    <li>hightlight 2</li>
-                    <li>hightlight 3</li>
-                </ul>
+            <div class="col-5">
+              <h2>What I found</h2>
+              <ul class="subtitle">
+                <li>
+                  <h5>
+                    Users are confused about the first fold of the website
+                  </h5>
+                </li>
+                <li><h5>Most websites put the animals on hero image.</h5></li>
+                <li>
+                  <h5>
+                    Users are unsure about the credibility of this website due
+                    to the inconsistency
+                  </h5>
+                </li>
+              </ul>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Ideation -->
-        <section class="Ideation">
-            <h2>Ideation</h2>
-            <div class="col-10" style="display: flex; justify-content: space-between;">
-                <h5>User Persona</h5>
-                <img src="../image/photoWF.png" width="826px" height="480px" alt="User Persona">
+      <!-- Ideation -->
+      <section id="ideation">
+        <div class="container-xxl">
+          <div class="row justify-content-center">
+            <h2 class="col-10">Ideation</h2>
+          </div>
+          <div class="row justify-content-center subtitle">
+            <div class="col-2">
+              <h5>User Persona</h5>
+            </div>
+            <div class="col-8">
+              <img
+                src="../image/ProjectOne/UserPersona.jpg"
+                class="img-fluid"
+                alt="User Persona"
+              />
+            </div>
+          </div>
+
+          <div class="row justify-content-center subtitlex2">
+            <div class="col-10">
+              <h5>User Task Flow</h5>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <img
+                src="../image/ProjectOne/UserFlow.jpg"
+                class="img-fluid"
+                alt="User Task Flow"
+              />
+            </div>
+          </div>
+
+          <div class="row justify-content-center subtitlex2">
+            <div class="col-10">
+              <h5>Sketch</h5>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <img
+                src="../image/ProjectOne/Sketch.jpg"
+                class="img-fluid"
+                alt="Sketch"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Prototyping -->
+      <section id="Prototyping">
+        <div class="container-xxl">
+          <div class="row justify-content-center">
+            <h2 class="col-10">Prototyping</h2>
+          </div>
+
+          <div class="row justify-content-center subtitle">
+            <div class="col-10">
+              <h5>UI Elements</h5>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <img
+                src="../image/ProjectOne/designSystem.jpg"
+                class="img-fluid"
+                alt="UI Elements"
+              />
+            </div>
+          </div>
+
+          <div class="row justify-content-center subtitle">
+            <div class="col-10">
+              <h5>Mockup</h5>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-5">
+              <img
+                src="../image/ProjectOne/mockup01.jpg"
+                class="img-fluid"
+                alt="Mockup 1"
+              />
+            </div>
+            <div class="col-5">
+              <img
+                src="../image/ProjectOne/mockup02.jpg"
+                class="img-fluid"
+                alt="Mockup 2"
+              />
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <h5 class="text-end">Explore Figma Prototype</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testing -->
+      <section id="Testing">
+        <div class="container-xxl">
+          <div class="row justify-content-center">
+            <h2 class="col-10">Testing</h2>
+          </div>
+
+          <div class="row justify-content-center subtitle">
+            <div class="col-10">
+              <h5>User Test</h5>
+            </div>
+          </div>
+
+          <div class="row justify-content-center"">
+          <div class="col-5">
+            <img
+              src="../image/ProjectOne/UserTesting.jpg"
+              class="img-fluid"
+              alt="User Testing"
+            />
+          </div>
+
+          <div class="col-5">
+            <div class="row">
+              <h4>What's the tester said?</h4>
+            </div>
+            <div class="row">
+                <h5>“It was easy to follow and intuitive! Kudos guys!”</h5>
+                <h5>
+                  "Navigation system was very easy to navigate, the process to
+                  adopt was a bit overwhelming but also I understand that a lot
+                  of information is needed to submit an adoption application."</h5>
+            </div>
+            <div class="row">
+              <h4>What can be improved?</h4>
+            </div>
+            <div class="row">
+                <h5>Re-Streamline the adoption application</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center subtitlex2">
+          <div class="col-10">
+            <h5>Compare</h5>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-5" style="text-align: center">
+            <h5>Before</h5>
+          </div>
+          <div class="col-5" style="text-align: center">
+            <h5>After</h5>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-5">
+            <img
+              src="../image/ProjectOne/Before1.jpg"
+              class="img-fluid"
+              alt="Mockup 1"
+            />
+          </div>
+          <div class="col-5">
+            <img
+              src="../image/ProjectOne/After1.jpg"
+              class="img-fluid"
+              alt="Mockup 2"
+            />
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-5"></div>
+          <div class="col-5">
+            <h6>1. Use Logo to highlight the recognition</h6>
+            <h6>2. Make the Nav bar more intuitive</h6>
+            <h6>3. Add a hero fold with call to action</h6>
+          </div>
+        </div>
+
+        <div class="row justify-content-center subtitle">
+          <div class="col-5" style="text-align: center">
+            <h5>Before</h5>
+          </div>
+          <div class="col-5" style="text-align: center">
+            <h5>After</h5>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-5">
+            <img
+              src="../image/ProjectOne/Before2.jpg"
+              class="img-fluid"
+              alt="Mockup 1"
+            />
+          </div>
+          <div class="col-5">
+            <img
+              src="../image/ProjectOne/After2.jpg"
+              class="img-fluid"
+              alt="Mockup 2"
+            />
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-5"></div>
+          <div class="col-5">
+            <h6>1. Create content encourage people to help</h6>
+            <h6>2. Streamline flash cards to 3 ways to help</h6>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reflection -->
+
+      <section id="Reflection">
+        <div class="container-xxl">
+          <div class="row justify-content-center">
+            <h2 class="col-10">Reflection</h2>
+          </div>
+          <div class="row justify-content-center subtitle">
+            <div
+              class="col-10"
+              style="background-color: #c6c8c7; padding: 32px"
+            >
+              <h5>
+                This redesign project has provided me with valuable insights into constructing a new website, focusing on Information Architecture, organizing the structure, and prioritizing content. I subsequently developed a design system to effectively convey the website's tone. In the near future, I aspire to engage with stakeholders, sharing my ideas to contribute towards helping furry friends find their forever families.
+              </h5>
+            </div>
+          </div>
+
+          <div class="row justify-content-center subtitlex2">
+            <div class="col-10">
+              <h4>Take Away</h4>
             </div>
             <div class="col-10">
-                <h5>User Task Flow</h5>
-                <img src="../image/photoWF.png" width="956px" height="480px" alt="User Persona">
+              <h5>1 "Have no fear of perfection -- you'll never reach it."</h5>
+              <h6>
+                Iterative process will help ensure that the design meets the
+                needs and expectations of both your team and your users.
+              </h6>
+              <h5>2 "Never skip User Test"</h5>
+              <h6>
+                Users often discover aspects that you hadn't considered. I
+                always look forward to their opinion then apply it back to my
+                design.
+              </h6>
             </div>
-            <div class="col-10">
-                <h5>Sketch</h5>
-                <img src="../image/photoWF.png" width="956px" height="480px" alt="User Persona">
+          </div>
+        </div>
+      </section>
+
+      <!-- project button -->
+
+      <section id="project button">
+        <div class="container-xxl">
+          <div class="row justify-content-center">
+            <div class="col-10 d-flex justify-content-between">
+              <div class="col-5">
+                <img
+                  src="../image/Arrow Left.png"
+                  height="32px"
+                  width="32px"
+                  alt="Arrow left"
+                />
+                <h5>Previous Project Name</h5>
+              </div>
+
+              <div class="col-5 d-flex flex-column align-items-end">
+                <img
+                  src="../image/Arrow Right.png"
+                  height="32px"
+                  width="32px"
+                  alt="Arrow Right"
+                />
+                <h5>Next Project Name</h5>
+              </div>
             </div>
-        </section>
-
-
-        <!-- Prototyping -->
-        <section class="Prototyping">
-            <h2>Prototyping</h2>
-            <div class="col-10">
-                <h5>UI Elements</h5>
-                <img class="col-10" src="../image/photoWF.png" width="826px" height="480px" alt="User Persona">
-            </div>
-            <div class="col-12">
-                <h5>Mockup</h5>
-                <div class="col-10" style="display: flex; justify-content: space-between;">
-                    <img src="../image/photoWF.png" width="466px" height="480px" alt="User Persona">
-                    <img src="../image/photoWF.png" width="466px" height="480px" alt="User Persona">
-                </div>
-                <h5 class="col-10" style="text-align: right;">Explore Figma Prototype</h5>
-            </div>
-        </section>
-
-
-        <!-- Testing -->
-        <section class="Testing">
-            <h2>Testing</h2>
-            <h5>User Test</h5>
-            <div class="col-10" style="display: flex; justify-content: space-between;">
-                <img class="col-5" src="../image/photoWF.png" width="826px" height="480px" alt="User Persona">
-                <div class="col-5" style="display: flex; flex-direction: column;">
-                    <h4>What’s the tester said?</h4>
-                    <ul>
-                        <li>opinion 1</li>
-                        <li>opinion 2</li>
-                        <li>opinion 3</li>
-                    </ul>
-                    <h4>What can be improved?</h4>
-                    <ul>
-                        <li>Improvement 1</li>
-                        <li>Improvement 2</li>
-                        <li>Improvement 3</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-12">
-                <h5>Compare</h5>
-                <div class="col-10" style="display: flex; justify-content: space-between;">
-                    <img src="../image/photoWF.png" width="466px" height="480px" alt="User Persona">
-                    <img src="../image/photoWF.png" width="466px" height="480px" alt="User Persona">
-                </div>
-                <div class="col-10" style="display: flex; justify-content: space-between;">
-                    <img src="../image/photoWF.png" width="466px" height="480px" alt="User Persona">
-                    <img src="../image/photoWF.png" width="466px" height="480px" alt="User Persona">
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Reflection -->
-        <section class="">
-            <h2>Reflection</h2>
-            <div class="col-10" style="background-color: #C6C8C7; padding: 32px;">
-                <h5 class="col-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. ipsum dolor
-                    sit amet, consectetur adipiscing elit. </h5>
-            </div>
-
-            <h5>Take Away</h5>
-            <div class="col-10" style="display: flex; justify-content: space-between;">
-                <h4>1</h4>
-                <h4>2</h4>
-                <h4>3</h4>
-            </div>
-        </section>
-
-
-
-        <!-- Project Button -->
-        <section>
-            <div class="col-10" style="display: flex; justify-content: space-between;">
-                <div style="display:flex; flex-direction: column; align-items:center ;">
-                    <img src="../image/Arrow Left.png" height="32px" width="32px" alt="Arrow left">
-                    <h5>Previous Project Name</h5>
-                </div>
-                <div style="display:flex; flex-direction: column; align-items:center ;">
-                    <img src="../image/Arrow Right.png" height="32px" width="32px" alt="Arrow Right">
-                    <h5>Next Project Name</h5>
-                </div>
-            </div>
-        </section>
-
+          </div>
+        </div>
+      </section>
     </main>
-
 
     <!-- Footer -->
 
     <footer>
+      <div class="container-xxl">
         <div id="FTop">
-            <div class="FLeft">
-                <div class="FImg"><a href="https://www.linkedin.com/in/raine-cai-947085102/" target="_blank"><img
-                            src="../image/Linkedin.png" alt="LinkedinIcon" width="32px" height="32px"></a>
-                    <a href="https://www.behance.net/rainecai" target="_blank"><img src="../image/Behance.png"
-                            alt="BehanceIcon" width="32px" height="32px"></a>
-                </div>
-                <h6>raine.ytcai@gmail.com</h6>
+          <div class="FLeft">
+            <div class="FImg">
+              <a
+                href="https://www.linkedin.com/in/raine-cai-947085102/"
+                target="_blank"
+                ><img
+                  src="../image/Index/Linkedin.png"
+                  alt="LinkedinIcon"
+                  width="32px"
+                  height="32px"
+              /></a>
+              <a href="https://www.behance.net/rainecai" target="_blank"
+                ><img
+                  src="../image/Index/Behance.png"
+                  alt="BehanceIcon"
+                  width="32px"
+                  height="32px"
+              /></a>
             </div>
+            <h6>raine.ytcai@gmail.com</h6>
+          </div>
         </div>
-        <p>Copyright © 2023 Raine Cai </p>
+        <p>Copyright © 2023 Raine Cai</p>
+      </div>
     </footer>
 
-
-
     <!-- JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
     <script src="/js/index.js"></script>
-</body>
+  </body>
+</html>

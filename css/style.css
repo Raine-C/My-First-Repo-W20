@@ -308,7 +308,7 @@ section {
 .TheatreArt {
     height: 429px;
     width: 319px;
-    background-image: url("../image/TheatreArt.png");
+    background-image: url("../image/Index/TheatreArt.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -316,7 +316,7 @@ section {
 .SalesEngineer {
     height: 429px;
     width: 319px;
-    background-image: url("../image/SalesEngineer.png");
+    background-image: url("../image/Index/SalesEngineer.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -325,7 +325,7 @@ section {
 .ProjectManager {
     height: 429px;
     width: 319px;
-    background-image: url("../image/ProjectManager.png");
+    background-image: url("../image/Index/ProjectManager.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -434,26 +434,26 @@ section {
 }
 
 #work1 {
-    background-image: url("../image/photoWF.png");
+    background-image: url("../image/Index/MHS.jpg");
     grid-area: work1;
     position: relative;
 }
 
 #work2 {
-    background-image: url("../image/photoWF.png");
+    background-image: url("../image/Index/CanadaPost.jpg");
     grid-area: work2;
     position: relative;
 
 }
 
 #work3 {
-    background-image: url("../image/photoWF.png");
+    background-image: url("../image/Index/Yogify.jpg");
     grid-area: work3;
     position: relative;
 }
 
 #work4 {
-    background-image: url("../image/photoWF.png");
+    background-image: url("../image/Index/Again.jpg");
     grid-area: work4;
     position: relative;
 }
@@ -470,11 +470,11 @@ section {
     width: 108px;
     height: 58px;
     border-radius: 20px;
-    background: #C7BBB1;
+    background: #907764;
     text-align: center;
     line-height: 58px;
     justify-content: center;
-    color: #1c2321;
+    color: #fafaef;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -485,11 +485,11 @@ section {
     width: 108px;
     height: 58px;
     border-radius: 20px;
-    background: #8D9190;
+    background: #1c2321;
     text-align: center;
     line-height: 58px;
     justify-content: center;
-    color: #1c2321;
+    color: #fafaef;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -530,7 +530,7 @@ h6 {
 #TMPhoto {
     width: 314px;
     height: 360px;
-    background-image: url("../image/Charlotte.png");
+    background-image: url("../image/Index/Charlotte.png");
     background-size: cover;
     display: flex;
     flex-direction: column;
