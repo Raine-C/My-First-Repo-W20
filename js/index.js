@@ -70,3 +70,7 @@ $(".ProjectManagercard").on("click", function () {
    
 
 });
+
+function redirectTo(url) {
+    window.location.href = url;
+}

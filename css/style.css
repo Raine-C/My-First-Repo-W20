@@ -432,17 +432,23 @@ section {
 
 }
 
+.clickable {
+    cursor: pointer;}
+
 #work1 {
     background-image: url("../image/Index/MHS.jpg");
     background-repeat: no-repeat;
     grid-area: work1;
     position: relative;
+    cursor: pointer;
 }
+
 
 #work2 {
     background-image: url("../image/Index/CanadaPost.jpg");
     grid-area: work2;
     position: relative;
+    cursor: pointer;
 
 }
 
@@ -450,12 +456,14 @@ section {
     background-image: url("../image/Index/Yogify.jpg");
     grid-area: work3;
     position: relative;
+    cursor: pointer;
 }
 
 #work4 {
     background-image: url("../image/Index/Again.webp");
     grid-area: work4;
     position: relative;
+    cursor: pointer;
 }
 
 .worklistGridArea {
@@ -786,6 +794,4 @@ footer p {
         display: flex;
         justify-content: center;
     }
-
-
 }
