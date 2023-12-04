@@ -3,29 +3,28 @@
     margin: 0;
 }
 
+h1,h2,h3,h4,h5{
+    font-family: Philosopher;
+}
+
 h1 {
     font-size: 49px;
-    font-family: Philosopher;
 }
 
 h2 {
     font-size: 39px;
-    font-family: Philosopher;
 }
 
 h3 {
     font-size: 31px;
-    font-family: Philosopher;
 }
 
 h4 {
     font-size: 25px;
-    font-family: Philosopher;
 }
 
 h5 {
     font-size: 20px;
-    font-family: Philosopher;
 }
 
 h6 {
@@ -435,6 +434,7 @@ section {
 
 #work1 {
     background-image: url("../image/Index/MHS.jpg");
+    background-repeat: no-repeat;
     grid-area: work1;
     position: relative;
 }
@@ -637,9 +637,9 @@ footer p {
 
 
 
-.projectRole {
+/* .projectRole {
     display: flex;
-}
+} */
 
 .subtitle {
     padding: 24px 0px 0px 0px;
