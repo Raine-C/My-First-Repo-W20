@@ -6,8 +6,7 @@
 h1,
 h2,
 h3,
-h4,
-h5 {
+h4 {
   font-family: Philosopher;
 }
 
@@ -29,6 +28,7 @@ h4 {
 
 h5 {
   font-size: 20px;
+  font-family: "Open Sans", sans-serif;
 }
 
 h6 {
@@ -288,7 +288,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 20px;
+  border-radius: 10px;
   position: relative;
   z-index: 1;
 }
@@ -328,7 +328,7 @@ section {
   background-color: rgba(33, 37, 36, 0.527);
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 10px;
   backdrop-filter: blur(10px);
 }
 
@@ -343,11 +343,11 @@ section {
 .TheatreArtcard,
 .ProjectManagercard,
 .SalesEngineercard {
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 10px 10px;
   background-color: #fff;
   border: 1px solid #907764;
   height: 465px;
-  width: 317px;
+  width: 319px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -431,14 +431,14 @@ section {
 }
 
 #work3 {
-  background-image: url("../image/Index/Yogify.jpg");
+  background-image: url("../image/Index/YOGiFY.jpg");
   grid-area: work3;
   position: relative;
   cursor: pointer;
 }
 
 #work4 {
-  background-image: url("../image/Index/Again.webp");
+  background-image: url("../image/Index/Again.jpg");
   grid-area: work4;
   position: relative;
   cursor: pointer;
@@ -448,13 +448,13 @@ section {
   background-size: cover;
   background-position: center;
   margin: 0 12px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .Apptag {
   width: 108px;
   height: 58px;
-  border-radius: 20px;
+  border-radius: 10px;
   background: #907764;
   text-align: center;
   line-height: 58px;
@@ -468,7 +468,7 @@ section {
 .Webtag {
   width: 108px;
   height: 58px;
-  border-radius: 20px;
+  border-radius: 10px;
   background: #1c2321;
   text-align: center;
   line-height: 58px;
@@ -518,7 +518,7 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .Ttext .right {
