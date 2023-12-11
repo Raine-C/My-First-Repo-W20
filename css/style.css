@@ -269,10 +269,10 @@ section {
   margin-top: 48px;
 }
 
-.mybackground {
+/* .mybackground {
   display: flex;
   justify-content: space-evenly;
-}
+} */
 
 #flashcardPicture {
   display: flex;
@@ -431,7 +431,7 @@ section {
 }
 
 #work3 {
-  background-image: url("../image/Index/yogify.jpg");
+  background-image: url("../image/Index/Again.jpg");
   grid-area: work3;
   position: relative;
   cursor: pointer;
