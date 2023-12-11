@@ -372,7 +372,7 @@ section {
   height: 48px;
 }
 
-.bounceMe {
+/* .bounceMe {
   animation: arrowDown 0.67s infinite;
 }
 
@@ -396,7 +396,7 @@ section {
   100% {
     transform: translateY(0px);
   }
-}
+} */
 
 /* My worK */
 
