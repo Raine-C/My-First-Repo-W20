@@ -6,8 +6,7 @@
 h1,
 h2,
 h3,
-h4,
-h5 {
+h4{
   font-family: Philosopher;
 }
 
@@ -29,15 +28,17 @@ h4 {
 
 h5 {
   font-size: 20px;
+  font-family: 'Mulish', sans-serif;
+  line-height: 26px;
 }
 
 h6 {
   font-size: 16px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Mulish', sans-serif;
 }
 
 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 14px;
 }
 
@@ -605,7 +606,7 @@ footer p {
 .sidenav a {
   text-decoration: none;
   color: #8d9190;
-  padding: 16px 16px;
+  padding: 8px 16px;
 }
 
 .sidenav a :hover {
