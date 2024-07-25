@@ -404,12 +404,12 @@ section {
 #worklistGrid {
   justify-content: center;
   display: grid;
-  grid-template: 407px 132px 407px 132px / 564px 564px;
+  grid-template: 407px 132px/ 564px 564px;
   grid-template-areas:
     "work1 work2"
-    "PD1 PD2"
-    "work3 work4"
-    "PD3 PD4";
+    "PD1 PD2";
+    /* "work3 work4"
+    "PD3 PD4"; */
 }
 
 .clickable {
@@ -425,7 +425,7 @@ section {
 }
 
 #work2 {
-  background-image: url("../image/Index/CanadaPost.jpg");
+  background-image: url("../image/Index/Again.jpg");
   grid-area: work2;
   position: relative;
   cursor: pointer;
