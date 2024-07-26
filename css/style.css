@@ -684,7 +684,7 @@ footer p {
   }
 
   #worklistGrid {
-    grid-template: 256px 132px 256px 132px 256px 132px 256px 132px/355px;
+    grid-template: 256px 132px 256px 132px /355px;
     grid-template-areas:
       "work1"
       "PD1"
@@ -747,4 +747,5 @@ footer p {
     display: flex;
     justify-content: center;
   }
+
 }

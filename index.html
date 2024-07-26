@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      .no-underline {
+          text-decoration: none;
+          color: inherit; /* Optional: Ensures the link text color matches the surrounding text */
+      }
+      .no-underline h6 {
+          margin: 0; /* To ensure no extra margin from h6 affects layout */
+          text-decoration: none; /* Ensure h6 within the link also has no underline */
+      }
+  </style>
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -22,6 +32,7 @@
 <meta property="og:description" content="Hi I'm Raine Cai. I'm a UI / UX designer who loves solving problems in a human-centred and logical way.">
 <meta property="og:image" content="image/Index/RcLogo.png">
 <meta property="og:url" content="https://www.rainecai.com/">
+
 <!-- schema.org -->
 <script type="application/ld+json">
   {
@@ -151,7 +162,7 @@
               );
             "
             > solving problems</span> and any task.
-          </h3>
+          </>
           <!-- <div class="ctabutton"> -->
             <!-- <a href="#FTop">
               <button
@@ -371,9 +382,9 @@
     </main>
     <!-- Footer-->
     <footer>
-      <div id="FTop">
+      <div id="FTop" class="d-flex justify-content-center">
         <div class="FLeft">
-          <div class="FImg">
+          <div class="FImg d-flex justify-content-center">
             <a
               href="https://www.linkedin.com/in/raine-cai-947085102/"
               target="_blank"
@@ -391,7 +402,8 @@
                 height="32px"
             /></a>
           </div>
-          <h6 class="mt-2">raine.ytcai@gmail.com</h6>
+          <a class="no-underline" href="mailto:raine.ytcai@gmail.com?subject=Hello&body=I%20am%20contacting%20you%20regarding...">
+            <h6 class="mt-2">raine.ytcai@gmail.com</h6></a>
         </div>
       </div>
       <p>Copyright © 2024 Raine Cai</p>
