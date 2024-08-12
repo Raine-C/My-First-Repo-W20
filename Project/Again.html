@@ -180,25 +180,28 @@
       <!-- Sidenav -->
       <div class="sidenav d-none d-lg-flex">
         <a href="#ProjectTitle">
-          <h5>Overview</h5>
-        </a>
-        <a href="#theProblem">
-          <h5>The Problem</h5>
+          <h6>Overview</h6>
         </a>
         <a href="#research">
-          <h5>Research</h5>
+          <h6>Research</h6>
+        </a>
+        <a href="#Challenge">
+          <h6>Challenge</h6>
+        </a>
+        <a href="#theProblem">
+          <h6>The Problem</h6>
         </a>
         <a href="#ideation">
-          <h5>Ideation</h5>
+          <h6>Ideation</h6>
         </a>
         <a href="#Prototyping">
-          <h5>Prototyping</h5>
+          <h6>Prototyping</h6>
         </a>
         <a href="#Testing">
-          <h5>Testing</h5>
+          <h6>Testing</h6>
         </a>
         <a href="#Reflection">
-          <h5>Reflection</h5>
+          <h6>Reflection</h6>
         </a>
       </div>
 
@@ -237,50 +240,71 @@
      <section id="research">
       <div class="container-xxl">
         <div class="row justify-content-center">
-          <div class="col-lg-5">
+          <div class="col-lg-10">
             <h2>Research</h2>
-            <h5 class="subtitle">
-              My research initially focused on conducting one-on-one interviews. This approach enabled me to understand the step-by-step process of travel planning and identify specific issues that could cause discomfort. Secondly, I observed the competitive landscape to understand how other itinerary apps are addressing similar concerns.</h5>
+            <h5 class="subtitle" style="line-height: 26px;">
+              My research first centred around the one-on-one interviews would help me understand users’ travel planning process (solo or in group under 4) and identify specific pain points to address. Secondly, I would observe the competitive landscape to see how other travel apps are addressing similar issues.
+            </h5>
+            <h4 class="mt-4">As a User Researcher, I want to understand</h4>
+            <ol style="font-size: 20px; font-family: 'Mulish', sans-serif;">
+              <li>I want to understand the step-by-step process of how people plan their leisure travel.</li>
+              <li>What make travellers worried during trips?</li>
+              <li>How travellers feel about popular overcrowded travel hotspots in bucket list.</li>
+            </ol>
           </div>
-          <div class="col-lg-5">
-            <h2>What I found</h2>
-            <ul class="subtitle">
-              <li>
-                <h5>
-                  Users often check multiple websites to compare prices, which is necessary but time-consuming for them.
-                </h5>
-              </li>
-              <li><h5>Searching too much takes away the excitement and surprise of discovering a new place.</h5></li>
-            </ul>
-          </div>
+        </div>
+        <br>
+        <div class="row justify-content-center">
+        <div class="col-lg-4 mt-4">
+          <h4>Research Methods</h4>
+          <h5 class="p-2"><strong>1 X 1</strong> interview</h5>
+          <h5 class="p-2"><strong>5</strong> Interviewees</h5>
+          <h5 class="p-2"><strong>20</strong> Interview Questions</h5>
+        </div>
+        <div class="col-lg-6 mt-4">
+          <img
+            src="../image/ProjectFour/Interviewhighlight.png"
+            class="img-fluid"
+            alt="Interview highlight"
+          />
+        </div>
         </div>
       </div>
     </section>
+
+          <!-- Challenge -->
+<section id="Challenge">
+  <div class="container-xxl">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <h2>Challenge</h2>
+      <h5 class="subtitle" style="font-family: 'Mulish', sans-serif; line-height: 26px;">
+        After conducting user interviews and creating an affinity diagram, I found Interviewees...
+      </h5>
+      <ol style="font-size: 20px;" class="subtitle p-lg-3">
+        <li><h5><b>Wish to avoid crowded places when travelling :</b> Travelling to crowded places adds stress, with long lines and less enjoyment, making it harder to relax and navigate.</h5></li>
+        <li><h5><b>Set Budget First :</b> Everyone loves a cheaper price—who doesn't? To make every cent count, they need to compare prices across different websites.</h5></li>
+        <li><h5><b>Spend a lot of time on researching :</b> On average, they realised they needed to spend two more weeks arranging the itinerary, including checking the open hours and transportation.</h5></li>
+      </ol>
+      </div>
+
+    </div>
+  </div>
+</section>
     
       <!-- Problem -->
       <section id="theProblem">
         <div class="container-xxl">
           <div class="row justify-content-center">
-            <div class="problem col-lg-5">
-              <h2>Problem</h2>
-              <ul class="subtitle">
-                <li><h5>Also need to find the best price within a limited budget.</h5></li>
-                <li>
-                  <h5>Prefer avoiding overcrowded and hot destinations for travel.</h5>
-                </li>
-                <li><h5>People Want to fully explore a city with abundant information to read.</h5></li>
-              </ul>
+                <div class="col-lg-10">
+                    <h2>Problem</h2>
+                    <h4 class="subtitle" style="font-family: 'Mulish', sans-serif;">“Travellers <span
+                      style="color:#BA3F13;">aiming to avoid crowds and stay within budget</span> often face stress and <span
+                      style="color:#BA3F13;">spend up to two extra weeks on research</span>, including price comparisons, open hours, and transportation planning,<span
+                      style="color:#BA3F13;"> reducing the overall enjoyment of their trip.</span>  ”</h4>
+                </div>
+              </div>
             </div>
-            <div class="ppsolution col-lg-5">
-              <h2>Proposed Solutions</h2>
-              <ul class="subtitle">
-                <li><h5>Generate a smart itinerary based on preferences.</h5></li>
-                <li><h5>Provide a clear Information Architecture</h5></li>
-                <li><h5>Include both hotel and transportation in the package.</h5></li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </section>
 
       <!-- Problem Statement -->
@@ -292,15 +316,16 @@
               style="background-color: #c7bbb1; padding: 32px"
             >
               <div class="row justify-content-center">
-                <p class="col-lg-10" style="font-size: 64px">"</p>
+                <h2 class="text-center">PainPonit</h2>
+                <p class="col-lg-10" style="font-size: 64px; line-height: 32px; ">"</p>
               </div>
               <div class="row justify-content-center">
-                <h3 class="col-lg-10">
+                <h3 class="col-lg-10" style="font-family: 'Mulish', sans-serif;">
                     Solo and small groups of travellers need to have a smart itinerary because planning a hassle-free trip under a limited budget requires spending a large amount of research time.
                 </h3>
               </div>
               <div class="row justify-content-center">
-                <p class="col-lg-10" style="font-size: 64px; text-align: right">
+                <p class="col-lg-10" style="font-size: 64px; text-align: right;  line-height: 32px;">
                   "
                 </p>
               </div>
@@ -566,17 +591,7 @@
                   width="32px"
                   alt="Arrow left"
                 />
-                <a class="link5" href="/pages/project3.html"><h5>YOGiFY-Find your flow</h5></a>
-              </div>
-
-              <div class="col-5 d-flex flex-column align-items-end">
-                <img
-                  src="../image/Arrow Right.png"
-                  height="32px"
-                  width="32px"
-                  alt="Arrow Right"
-                />
-                <a class="link5" href="/pages/project1.html"><h5>Mississauga Humane Society Redesign</h5></a>
+                <a class="link5" href="/Project/MHS.html"><h5>Previous Project</h5></a>
               </div>
             </div>
           </div>
@@ -585,34 +600,32 @@
     </main>
 
     <!-- Footer -->
-
     <footer>
-      <div class="container-xxl">
-        <div id="FTop">
-          <div class="FLeft">
-            <div class="FImg">
-              <a
-                href="https://www.linkedin.com/in/raine-cai-947085102/"
-                target="_blank"
-                ><img
-                  src="../image/Index/Linkedin.png"
-                  alt="LinkedinIcon"
-                  width="32px"
-                  height="32px"
-              /></a>
-              <a href="https://www.behance.net/rainecai" target="_blank"
-                ><img
-                  src="../image/Index/Behance.png"
-                  alt="BehanceIcon"
-                  width="32px"
-                  height="32px"
-              /></a>
-            </div>
-            <h6>raine.ytcai@gmail.com</h6>
+      <div id="FTop" class="d-flex justify-content-center">
+        <div class="FLeft">
+          <div class="FImg d-flex justify-content-center">
+            <a
+              href="https://www.linkedin.com/in/raine-cai-947085102/"
+              target="_blank"
+              ><img
+                src="/image/Index/Linkedin.png"
+                alt="LinkedinIcon"
+                width="32px"
+                height="32px"
+            /></a>
+            <a href="https://www.behance.net/rainecai" target="_blank"
+              ><img
+                src="/image/Index/Behance.png"
+                alt="BehanceIcon"
+                width="32px"
+                height="32px"
+            /></a>
           </div>
+          <a style="text-decoration: none;" href="mailto:raine.ytcai@gmail.com?subject=Hello&body=I%20am%20contacting%20you%20regarding...">
+            <h6 class="mt-2 no-underline">raine.ytcai@gmail.com</h6></a>
         </div>
-        <p>Copyright © 2024 Raine Cai</p>
       </div>
+      <p>Copyright © 2024 Raine Cai</p>
     </footer>
 
     <!-- JS -->
